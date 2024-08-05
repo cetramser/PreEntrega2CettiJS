@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro de Gastos</title>
+    <!-- <link rel="stylesheet" href="styles.css"> Si tienes un archivo CSS -->
+</head>
+
+<body>
+    <h1>Registro de Gastos e Ingresos</h1>
+    <form id="formulario-transaccion">
+        <label for="tipo">Tipo:</label>
+        <select id="tipo">
+            <option value="ingreso">Ingreso</option>
+            <option value="gasto">Gasto</option>
+        </select>
+        <label for="monto">Monto:</label>
+        <input type="number" id="monto" required>
+        <label for="descripcion">Descripción:</label>
+        <input type="text" id="descripcion" required>
+        <button type="submit">Añadir</button>
+    </form>
+
+    <h2>Balance: <span id="balance">0</span></h2>
+    <h2>Ingresos: <span id="total-ingresos">0</span></h2>
+    <h2>Gastos: <span id="total-gastos">0</span></h2>
+
+    <ul id="lista-transacciones"></ul>
+
+    <script src="./JS/main.js"></script>
+
+</body>
+
+</html>
